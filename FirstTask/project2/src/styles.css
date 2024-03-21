@@ -1,0 +1,49 @@
+body{
+    background-color: whitesmoke;
+}
+
+.container{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.container h1{
+    color: rgb(84, 84, 255);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.container hr{
+    width: 50px;
+    margin: 0;
+    border: none;
+    margin-bottom: 50px;
+    height: 2px;
+    background-color: red;
+}
+
+.container .row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .row .item{
+    background-color: white;
+    width: 30%;
+}
+
+.container .row .item h2{
+    margin: 50px;
+    margin-bottom: 20px;
+    color: rgb(84, 84, 255);
+}
+
+.container .row .item p{
+    margin-left: 50px;
+    margin-right: 50px;
+    color: rgb(84, 84, 255);
+}
+
+.container .row .item img{
+    width: 100%;
+}

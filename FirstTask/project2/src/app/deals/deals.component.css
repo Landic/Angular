@@ -1,0 +1,11 @@
+.container{
+    margin-top: 100px;
+}
+
+.container .row .item{
+    width: 48%;
+}
+
+.container .row .item img{
+    height: 400px;
+}

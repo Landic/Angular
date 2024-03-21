@@ -1,0 +1,13 @@
+<section>
+    <div class="container">
+        <h1>Deals & Destinations</h1>
+        <hr>
+        <div class="row">
+            <div class="item" *ngFor="let article of articles">
+                <img [src]="article.src"alt="image">
+                <h2>{{article.title}}</h2>
+                <p>{{article.text}}</p>
+            </div>
+        </div>
+    </div>
+</section>
