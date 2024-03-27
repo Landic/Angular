@@ -1,0 +1,19 @@
+<section>
+    <div class="wrap-choice-book">
+        <div class="butts">
+            <li class="butt" [ngClass]="{ 'selected': librarys_obj === library }" *ngFor="let library of librarys" (click)= "onSelect(library)">
+                {{library.name}}<br/>{{library.author}}
+            </li>
+        </div>
+        <div class="info">
+            <img [src]="librarys_obj.src" alt="book">
+            <ul>
+                <li><b>Название:</b> {{librarys_obj.name}}</li>
+                <li><b>Автор:</b> {{librarys_obj.author}}</li>
+                <li><b>Рейтинг:</b> {{librarys_obj.rating}}</li>
+                <li><b>Год:</b> {{librarys_obj.year}}</li>
+                <li><b>Цена:</b> {{librarys_obj.price}}</li>
+            </ul>
+        </div>
+    </div>
+</section>

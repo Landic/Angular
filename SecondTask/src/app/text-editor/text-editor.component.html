@@ -1,0 +1,10 @@
+<div class="butt-box">
+    <button (click)="ChangeBold()" [ngClass]="{'active': isBold}">B</button>
+    <button  (click)="ChangeItalic()" [ngClass]="{'active': isItalic}">I</button>
+    <button  (click)="ChangeUnderline()" [ngClass]="{'active': isUnderline}">U</button>
+    <button  (click)="ChangeUpperCase()" [ngClass]="{'active': isUpperCase}">TT</button>
+    <select (ngModel)="fontSize" (change)="onFontSizeChange($event)">
+        <option *ngFor="let size of fontSizes" [value]="size">{{ size }}</option>
+    </select> 
+</div>
+<textarea [ngClass]="{'Bold': isBold,'Italic': isItalic, 'Underline': isUnderline, 'Uppercase': isUpperCase}" [style.font-size]="fontSize"></textarea>
