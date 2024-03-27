@@ -1,0 +1,15 @@
+<div class="animal">
+    <img class="pet-photo" [src]="pet.photo">
+    <h2 class="pet-name">{{ pet.name }} 
+        <span class="species">({{ pet.species }})</span>
+    </h2>
+    <p>
+        <strong>Age: {{ calculateAge(pet.birthYear) }}</strong>
+    </p>
+    <ng-container *ngIf="pet.favFoods && pet.favFoods.length > 0">
+      <h4>Favorite Foods</h4>
+      <ul class="foods-list">
+        <li *ngFor="let food of pet.favFoods">{{ food }}</li>
+      </ul>
+    </ng-container>
+  </div>
