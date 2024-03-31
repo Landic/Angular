@@ -1,0 +1,19 @@
+<section>
+    <div class="box-input">
+        <input type="text" [(ngModel)]="userTemp">
+        <input type="number" [(ngModel)]="salary">
+        <input type="date" [(ngModel)]="birthDate">
+        <button (click)="addUser()">Add</button>
+    </div>
+    <div class="box-Card">
+        <div *ngFor="let user of user; let i = index" class="CardUser">
+            <p><span>Name:</span> {{user.name | capitalize}}</p>
+            <p><span>Salary:</span> {{user.salary | salary}}</p>
+            <p><span>Date:</span> {{user.BirthDate | date}}</p>
+            <div>
+                <button (click)="EditUser(i)">Edit</button>
+                <button (click)="RemoveUser(i)">Remove</button>
+            </div>
+        </div> 
+    </div>
+</section>

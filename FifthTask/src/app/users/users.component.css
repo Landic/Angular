@@ -1,0 +1,63 @@
+.box-input{
+    display: flex;
+    gap: 10px;
+}
+
+.box-input input{
+    border: 1px gray solid;
+    border-radius: 10px;
+    padding: 5px;
+    width: 150px;
+}
+
+.box-input button{
+    border: 1px gray solid;
+    background: whitesmoke;
+    border-radius: 10px;
+    width: 75px;
+}
+
+.box-input button:hover{
+    background: rgb(238, 238, 238);
+    transition: 0.5s;
+}
+
+.box-input button:active{
+    background-color: rgb(212, 212, 212);
+}
+
+.box-Card{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.CardUser{
+    border: 1px gray solid;
+    width: 200px;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.CardUser div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.CardUser div button{
+    width: 75px;
+    border: 1px gray solid;
+    background: whitesmoke;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.CardUser div button:hover{
+    background: rgb(238, 238, 238);
+    transition: 0.5s;
+}
+
+.CardUser div button:active{
+    background-color: rgb(212, 212, 212);
+}
