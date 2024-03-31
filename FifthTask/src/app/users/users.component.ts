@@ -7,7 +7,7 @@ import { Data } from '@angular/router';
   styleUrl: './users.component.css'
 })
 export class UsersComponent {
-  user: {name: string, salary: number, BirthDate: Date}[] = [{name:"rand", salary:1000000, BirthDate: new Date("10.11.2003")}];
+  user: {name: string, salary: number, BirthDate: Date}[] = [];
   userTemp: string = "";
   salary: number = 0;
   birthDate: Date = new Date();
