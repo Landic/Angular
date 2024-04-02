@@ -1,0 +1,29 @@
+<section>
+    <div class="sortByFacult">
+      Сортировка за факультетом:
+      <select [(ngModel)]="selectedFaculty">
+        <option value="">All</option>
+        <option *ngFor="let faculty of uniqueFaculties" [value]="faculty">{{ faculty }}</option>
+      </select>
+    </div>
+    <div class="sortByGroup">
+      Сортировка за группой:
+      <select [(ngModel)]="selectedGroup">
+        <option value="">All</option>
+        <option *ngFor="let group of groups" [value]="group.name">{{ group.name }}</option>
+      </select>
+    </div>
+    <div class="butt">
+      <button (click)="sortBySeats()">Сортировка по местам</button>
+      <button (click)="sortByTitle()">Сортировка по алфавиту</button>
+      <button (click)="resetFilters()">Сбросить фильтры</button>
+    </div>
+    <div class="SectionCard">
+        <div class="card" *ngFor="let auditorium of (auditoriums | filter: selectedFaculty | groupFilter: selectedGroup : groups | sortByPipe: sortType)">
+            <p><span>Название:</span> {{auditorium.name}}</p>
+            <p><span>Количество мест:</span> {{auditorium.seats}}</p>
+            <p><span>Факультет:</span> {{auditorium.faculty}}</p>
+        </div> 
+    </div>
+</section>
+  
